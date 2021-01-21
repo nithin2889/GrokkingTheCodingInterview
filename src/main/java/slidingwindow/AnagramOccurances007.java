@@ -15,7 +15,7 @@ public class AnagramOccurances007 {
     int k = pattern.length();
 
     Map<Character, Integer> charFrequencyMap = new HashMap<>();
-    int count = 0;
+    int count;
     int i = 0, j = 0;
     int anagramCount = 0;
 
