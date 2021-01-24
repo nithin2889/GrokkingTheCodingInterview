@@ -13,7 +13,8 @@ public class SortedArraySquares003 {
     int n = arr.length;
     int highestSquaredIdx = n - 1;
     int[] result = new int[n];
-    int left = 0, right = arr.length - 1;
+    int left = 0;
+    int right = arr.length - 1;
 
     while (left <= right) {
       int leftSquare = arr[left] * arr[left];
