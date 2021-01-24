@@ -1,9 +1,9 @@
 package twopointers;
 
-public class RemoveFromUnsortedArrayGivenKey003 {
+public class RemoveFromUnsortedArrayGivenKey002 {
 
   public static void main(String[] args) {
-    System.out.println(RemoveFromUnsortedArrayGivenKey003
+    System.out.println(RemoveFromUnsortedArrayGivenKey002
         .remove(new int[]{3, 2, 3, 6, 3, 10, 9, 3}, 3));
   }
 
