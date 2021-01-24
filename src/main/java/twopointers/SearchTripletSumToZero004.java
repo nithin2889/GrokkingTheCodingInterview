@@ -36,6 +36,15 @@ public class SearchTripletSumToZero004 {
    * To handle this, we have to skip any duplicate number. Since we will be sorting the array,
    * so all the duplicate numbers will be next to each other and are easier to skip.
    *
+   * Time complexity:
+   * Sorting the array will take O(N * logN). The searchPair() function will take O(N). As we are
+   * calling searchPair() for every number in the input array, this means that overall searchTriplets()
+   * will take O(N * logN + N^2), which is asymptotically equivalent to O(N^2).
+   *
+   * Space complexity:
+   * Ignoring the space required for the output array, the space complexity of the above algorithm
+   * will be O(N) which is required for sorting.
+   *
    */
   public static List<List<Integer>> searchTriplet(int[] arr) {
     // arr = {-3, 0, 1, 2, -1, 1, -2}
