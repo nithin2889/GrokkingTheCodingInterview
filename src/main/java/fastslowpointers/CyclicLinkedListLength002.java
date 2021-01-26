@@ -36,6 +36,7 @@ public class CyclicLinkedListLength002 {
     head.next.next.next.next = new ListNode(5);
     head.next.next.next.next.next = new ListNode(6);
     head.next.next.next.next.next.next = head.next.next;
+
     System.out
         .println("Linked List cycle length: " + CyclicLinkedListLength002.findCycleLength(head));
 
