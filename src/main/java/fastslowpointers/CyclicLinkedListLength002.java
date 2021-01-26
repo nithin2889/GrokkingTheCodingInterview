@@ -2,6 +2,17 @@ package fastslowpointers;
 
 public class CyclicLinkedListLength002 {
 
+  /**
+   * Given the head of a LinkedList with a cycle, find the length of the cycle.
+   *
+   * Solution: We can use the above solution to find the cycle in the LinkedList.
+   * Once the fast and slow pointers meet, we can save the slow pointer and iterate
+   * the whole cycle with another pointer until we see the slow pointer again to find
+   * the length of the cycle.
+   *
+   * Time and Space Complexity: The above algorithm runs in O(N) time complexity
+   * and O(1) space complexity.
+   */
   public static int findCycleLength(ListNode head) {
     ListNode fast = head;
     ListNode slow = head;
