@@ -13,14 +13,14 @@ public class KthGrammarSymbol {
     }
 
     double length = Math.pow(2, N - 1);
-    double mid = length / 2;
+    int mid = (int) length / 2;
 
     // Hypothesis
     if (K <= mid) {
       return solveKthGrammar(N - 1, K);
     } else {
       // Induction
-      if (solveKthGrammar(N - 1, (int) (K - mid)) == 0) {
+      if (solveKthGrammar(N - 1, K - mid) == 0) {
         return 1;
       } else {
         return 0;
