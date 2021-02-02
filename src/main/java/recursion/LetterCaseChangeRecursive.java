@@ -25,8 +25,12 @@ public class LetterCaseChangeRecursive {
     if (Character.isDigit(ip.charAt(0))) {
       op += ip.charAt(0);
       ip = ip.substring(1);
+      // As per the recursive tree, there is one choice when it is a digit.
+      // So we call the function once.
       solve(ip, op, result);
     } else {
+      // As per the recursive tree, there are two choices when it is not a digit.
+      // So we call the function twice.
       op1 += ip.toLowerCase().charAt(0);
       op2 += ip.toUpperCase().charAt(0);
       ip = ip.substring(1);
