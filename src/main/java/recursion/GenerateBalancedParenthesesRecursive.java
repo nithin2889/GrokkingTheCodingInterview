@@ -33,7 +33,6 @@ public class GenerateBalancedParenthesesRecursive {
       op1 += "(";
       solve(open - 1, closed, op1, output);
     }
-
     // when closed is greater than open, we have the closing parentheses choice in the output.
     if (closed > open) {
       op2 = op;
