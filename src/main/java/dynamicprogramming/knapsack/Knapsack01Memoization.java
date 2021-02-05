@@ -30,6 +30,7 @@ public class Knapsack01Memoization {
       return t[n][w];
     }
 
+    // if the weight of the item is well within the weight of the knapsack.
     if (wt[n - 1] <= w) {
       // Return value of table after storing
       t[n][w] = Math.max(val[n - 1] + knapsack(wt, val, w - wt[n - 1], n - 1, t),
@@ -38,6 +39,7 @@ public class Knapsack01Memoization {
       // Store the value of function call stack in table before return
       t[n][w] = knapsack(wt, val, w, n - 1, t);
     }
+    // return answer from the last element in the matrix.
     return t[n][w];
   }
 }
