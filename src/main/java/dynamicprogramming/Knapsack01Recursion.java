@@ -1,6 +1,6 @@
 package dynamicprogramming;
 
-public class Knapsack01Problem {
+public class Knapsack01Recursion {
 
   public static void main(String[] args) {
     int[] val = new int[]{60, 100, 120};
