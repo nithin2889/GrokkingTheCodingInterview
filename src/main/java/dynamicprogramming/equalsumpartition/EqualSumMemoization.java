@@ -26,10 +26,10 @@ public class EqualSumMemoization {
     for (int i = 0; i < n + 1; i++) {
       for (int j = 0; j < sum + 1; j++) {
         if (i == 0) {
-          t[i][j] = true;
+          t[i][j] = false;
         }
         if (j == 0) {
-          t[i][j] = false;
+          t[i][j] = true;
         }
       }
     }
