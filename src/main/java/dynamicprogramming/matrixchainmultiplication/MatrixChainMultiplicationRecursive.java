@@ -15,7 +15,7 @@ public class MatrixChainMultiplicationRecursive {
     }
     int min = Integer.MAX_VALUE;
     for (int k = i; k <= j - 1; k++) {
-      int tempAns = solve(arr, i, k) + solve(arr, k + 1, j) + arr[i - 1] * arr[k] * arr[j];
+      int tempAns = solve(arr, i, k) + solve(arr, k + 1, j) + (arr[i - 1] * arr[k] * arr[j]);
       if (tempAns < min) {
         min = tempAns;
       }
