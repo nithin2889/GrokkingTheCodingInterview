@@ -51,6 +51,6 @@ public class PalindromePartitioningMemoization {
       i++;
       j--;
     }
-    return false;
+    return true;
   }
 }
