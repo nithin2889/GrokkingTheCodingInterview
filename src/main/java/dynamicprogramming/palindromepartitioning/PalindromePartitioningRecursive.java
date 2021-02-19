@@ -3,7 +3,7 @@ package dynamicprogramming.palindromepartitioning;
 public class PalindromePartitioningRecursive {
 
   public static void main(String[] args) {
-    String inStr = "nitik";
+    String inStr = "nitin";
     int n = inStr.length();
     int i = 0, j = n - 1;
     System.out.println("Min number of partitions in the string is: "
