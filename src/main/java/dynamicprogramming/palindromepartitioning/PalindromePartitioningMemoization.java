@@ -37,7 +37,7 @@ public class PalindromePartitioningMemoization {
 
   private static boolean isPalindrome(String s) {
     int n = s.length();
-    int i = 0, j = n - 1;
+    int i = 0, j = n - i - 1;
     if (i == j) {
       return true;
     }
