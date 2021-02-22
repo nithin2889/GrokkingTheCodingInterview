@@ -22,7 +22,7 @@ public class MaxPathSumFromAnyNodeToAnyNode {
     int tempAns = Math.max(Math.max(leftMaxPathSum, rightMaxPathSum) + root.val, root.val);
     int ans = leftMaxPathSum + rightMaxPathSum + root.val;
     res = Math.max(res, ans);
-    return tempAns;
+    return res;
   }
 
   static class Node {
