@@ -12,13 +12,11 @@ public class KthSmallestElement {
   }
 
   private static int findKthSmallestElement(int[] arr, int k, int size) {
-    PriorityQueue<Integer> maxHeap = new PriorityQueue<>();
+    PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> b - a);
     for (int i = 0; i < size; i++) {
       maxHeap.add(arr[i]);
       if (maxHeap.size() > k) {
-        // remove the topmost element from the heap and add the next element from the array.
         maxHeap.poll();
-        maxHeap.add(arr[i]);
       }
     }
     return maxHeap.peek();
