@@ -28,7 +28,6 @@ public class PrintKClosestPointsToOrigin {
     int row = 0;
     while (!maxHeap.isEmpty()) {
       Pair pair = maxHeap.poll();
-      System.out.println(pair.key);
       res[row][0] = arr[pair.key][0];
       res[row][1] = arr[pair.key][1];
       row++;
