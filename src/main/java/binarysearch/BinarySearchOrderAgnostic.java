@@ -19,6 +19,10 @@ public class BinarySearchOrderAgnostic {
     int start = 0;
     int end = arr.length - 1;
 
+    if (arr.length == 1) {
+      return 0;
+    }
+
     while (start <= end) {
       int mid = start + (end - start) / 2;
 
