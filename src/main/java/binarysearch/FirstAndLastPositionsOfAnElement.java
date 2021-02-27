@@ -37,7 +37,7 @@ public class FirstAndLastPositionsOfAnElement {
     int res = -1;
 
     while (start <= end) {
-      int mid = (start + (end - start)) / 2;
+      int mid = start + (end - start) / 2;
 
       if (arr[mid] == ele) {
         // since mid is a possible answer, store it.
