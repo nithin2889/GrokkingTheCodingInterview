@@ -20,7 +20,7 @@ public class FirstAndLastPositionsOfAnElement {
       int mid = (start + (end - start)) / 2;
 
       if (arr[mid] == ele) {
-        // since mid is a possible answer, store it
+        // since mid is a possible answer, store it.
         res = mid;
         end = mid - 1;
       } else if (ele < arr[mid]) {
