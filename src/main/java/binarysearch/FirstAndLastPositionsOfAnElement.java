@@ -5,6 +5,7 @@ public class FirstAndLastPositionsOfAnElement {
   public static void main(String[] args) {
     int[] arr = {2, 4, 10, 10, 10, 18, 20};
     int ele = 10;
+
     System.out.println("First occurrence of element "
         + ele + " found at index: " + firstOccurrence(arr, ele));
     System.out.println("Last occurrence of element "
