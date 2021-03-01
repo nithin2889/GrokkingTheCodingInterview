@@ -4,8 +4,7 @@ public class SearchingInNearlySortedArray {
 
   public static void main(String[] args) {
     int[] arr = {5, 10, 30, 20, 40};
-    int size = arr.length;
-    System.out.println("Number of times an array rotated is: " + search(arr, 20));
+    System.out.println("Element found at index: " + search(arr, 20));
   }
 
   // modified binary search
