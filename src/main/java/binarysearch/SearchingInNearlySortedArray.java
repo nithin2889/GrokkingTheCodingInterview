@@ -5,11 +5,11 @@ public class SearchingInNearlySortedArray {
   public static void main(String[] args) {
     int[] arr = {5, 10, 30, 20, 40};
     int size = arr.length;
-    System.out.println("Number of times an array rotated is: " + search(arr, size, 20));
+    System.out.println("Number of times an array rotated is: " + search(arr, 20));
   }
 
   // modified binary search
-  private static int search(int[] arr, int size, int ele) {
+  private static int search(int[] arr, int ele) {
     int start = 0, end = arr.length - 1;
 
     while (start <= end) {
