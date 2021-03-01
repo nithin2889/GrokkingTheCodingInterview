@@ -12,12 +12,10 @@ public class SearchInBinarySortedInfiniteArray {
   private static int findLowerBound(int[] arr, int key) {
     int start = 0;
     int end = 1;
-
     while (key > arr[end]) {
       start = end;
       end *= 2;
     }
-
     return binarySearch(arr, start, end, key);
   }
 
