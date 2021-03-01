@@ -10,7 +10,7 @@ public class NextAlphabeticalElement {
 
   private static char findNextChar(char[] arr, char ele) {
     int start = 0, end = arr.length - 1;
-    char res = '0';
+    char res = '#';
 
     while (start <= end) {
       int mid = start + (end - start) / 2;
