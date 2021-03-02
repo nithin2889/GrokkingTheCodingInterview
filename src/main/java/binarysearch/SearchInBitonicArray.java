@@ -10,6 +10,9 @@ public class SearchInBitonicArray {
     int peak = findPeakElement(arr, size);
     System.out.println("The peak element is present at the index: " + peak);
     System.out.println("The element is present at index: ");
+
+    // We found the peak element and later applied binary search on
+    // two array halves based on the peak element.
     System.out.println(binarySearch(arr, 0, peak - 1, ele));
     System.out.println(binarySearch(arr, peak, size - 1, ele));
   }
