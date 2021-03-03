@@ -1,9 +1,11 @@
 package binarysearch;
 
+import java.util.Arrays;
+
 public class AllocateMinNumOfPages {
 
   public static void main(String[] args) {
-    int[] arr = {12, 34, 67, 90};
+    int[] arr = {10, 20, 30, 40};
     int n = arr.length;
     int k = 2;
 
@@ -21,7 +23,10 @@ public class AllocateMinNumOfPages {
       sum += arr[i];
     }
 
-    int start = 0, end = sum;
+    // at least one student should have one book to study from.
+    // choosing the largest element in the array to start with.
+    int start = Arrays.stream(arr).max().getAsInt();
+    int end = sum;
     int res = -1;
 
     while (start <= end) {
@@ -47,10 +52,10 @@ public class AllocateMinNumOfPages {
         student++;
         sum = arr[i];
       }
-    }
-
-    if (student > k) {
-      return false;
+      // checking within the loop to improve the efficiency.
+      if (student > k) {
+        return false;
+      }
     }
     return true;
   }
