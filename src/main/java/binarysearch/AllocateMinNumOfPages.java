@@ -32,6 +32,7 @@ public class AllocateMinNumOfPages {
     while (start <= end) {
       int mid = start + (end - start) / 2;
 
+      // the isValid function checks whether the element chosen as mid is right
       if (isValid(arr, n, k, mid)) {
         res = mid;
         end = mid - 1;
