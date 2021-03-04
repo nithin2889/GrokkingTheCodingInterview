@@ -8,7 +8,8 @@ public class NearestSmallerToRight {
 
   public static void main(String[] args) {
     int[] arr = {4, 5, 2, 10, 8};
-    System.out.println(nearestSmallestToRight(arr));
+    System.out.println("Nearest smallest to right of the array is: "
+        + nearestSmallestToRight(arr));
   }
 
   private static List<Integer> nearestSmallestToRight(int[] arr) {
