@@ -8,7 +8,8 @@ public class NearestSmallerToLeft {
 
   public static void main(String[] args) {
     int[] arr = {4, 5, 2, 10, 8};
-    System.out.println(nearestSmallestToLeft(arr));
+    System.out.println("Nearest smallest to left of the array is: "
+        + nearestSmallestToLeft(arr));
   }
 
   private static List<Integer> nearestSmallestToLeft(int[] arr) {
