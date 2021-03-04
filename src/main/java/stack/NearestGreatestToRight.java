@@ -18,15 +18,15 @@ public class NearestGreatestToRight {
     int size = arr.length;
 
     for (int i = size - 1; i >= 0; i--) {
-      if (st.empty()) {
+      if (st.isEmpty()) {
         reverseList.add(-1);
       } else if (st.size() > 0 && st.peek() > arr[i]) {
         reverseList.add(st.peek());
       } else if (st.size() > 0 && st.peek() <= arr[i]) {
-        while (!st.empty() && st.peek() <= arr[i]) {
+        while (!st.isEmpty() && arr[i] >= st.peek()) {
           st.pop();
         }
-        if (st.empty()) {
+        if (st.isEmpty()) {
           reverseList.add(-1);
         } else {
           reverseList.add(st.peek());
