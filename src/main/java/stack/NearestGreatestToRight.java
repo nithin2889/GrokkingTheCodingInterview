@@ -8,7 +8,8 @@ public class NearestGreatestToRight {
 
   public static void main(String[] args) {
     int[] arr = {1, 3, 2, 4};
-    System.out.println(nearestGreatestToRight(arr));
+    System.out.println("Nearest greatest to right of the array is: "
+        + nearestGreatestToRight(arr));
   }
 
   private static List<Integer> nearestGreatestToRight(int[] arr) {
