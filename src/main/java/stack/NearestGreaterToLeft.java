@@ -8,7 +8,8 @@ public class NearestGreaterToLeft {
 
   public static void main(String[] args) {
     int[] arr = {1, 3, 2, 4};
-    System.out.println(nearestGreatestToLeft(arr));
+    System.out.println("Nearest greatest to left of the array is: "
+        + nearestGreatestToLeft(arr));
   }
 
   private static List<Integer> nearestGreatestToLeft(int[] arr) {
