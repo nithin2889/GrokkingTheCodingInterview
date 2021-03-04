@@ -16,7 +16,7 @@ public class NearestGreaterToLeft {
     List<Integer> resultList = new ArrayList<>();
     int size = arr.length;
 
-    for (int i = 0; i < size - 1; i++) {
+    for (int i = 0; i < size; i++) {
       if (st.isEmpty()) {
         resultList.add(-1);
       } else if (st.size() > 0 && st.peek() > arr[i]) {
