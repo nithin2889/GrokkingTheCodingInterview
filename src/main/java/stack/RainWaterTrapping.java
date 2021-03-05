@@ -13,7 +13,7 @@ public class RainWaterTrapping {
     maxR[size - 1] = arr[size - 1];
 
     int sum = amountOfRainWaterTrapped(arr, size, maxL, maxR);
-    System.out.println("Amount of water units trapped is: " + sum);
+    System.out.println("Maximum water that can be trapped is: " + sum);
   }
 
   private static int amountOfRainWaterTrapped(int[] arr, int size, int[] maxL, int[] maxR) {
