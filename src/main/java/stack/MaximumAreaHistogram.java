@@ -14,6 +14,13 @@ public class MaximumAreaHistogram {
     List<Integer> nsr = findNSR(arr);
     List<Integer> nsl = findNSL(arr);
 
+    int[] area = maxHistogramArea(arr, nsr, nsl);
+
+    System.out.println("Maximum area of histogram is: "
+        + Arrays.stream(area).max().getAsInt() + " units");
+  }
+
+  private static int[] maxHistogramArea(int[] arr, List<Integer> nsr, List<Integer> nsl) {
     int[] width = new int[nsr.size()];
     int[] area = new int[nsr.size()];
 
@@ -26,8 +33,7 @@ public class MaximumAreaHistogram {
     for (int i = 0; i < width.length; i++) {
       area[i] = arr[i] * width[i];
     }
-    System.out.println("Maximum area of histogram is: "
-        + Arrays.stream(area).max().getAsInt() + " units");
+    return area;
   }
 
   private static List<Integer> findNSR(int[] arr) {
