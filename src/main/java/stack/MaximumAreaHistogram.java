@@ -35,6 +35,7 @@ public class MaximumAreaHistogram {
     List<Integer> right = new ArrayList<>();
     List<Integer> res = new ArrayList<>();
     int size = arr.length;
+    // pseudo index for the right part of the array is 7 as the array has 7 elements (indexed 0)
     int pseudoIndex = 7;
 
     for (int i = size - 1; i >= 0; i--) {
@@ -68,6 +69,7 @@ public class MaximumAreaHistogram {
     Stack<Pair> st = new Stack<>();
     List<Integer> left = new ArrayList<>();
     int size = arr.length;
+    // pseudo index for the left part of the array is -1 as the array starts from 0th index.
     int pseudoIndex = -1;
 
     for (int i = 0; i <= size - 1; i++) {
