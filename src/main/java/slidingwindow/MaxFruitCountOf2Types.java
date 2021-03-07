@@ -3,15 +3,15 @@ package slidingwindow;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MaxFruitCountOf2Types005 {
+public class MaxFruitCountOf2Types {
 
   public static void main(String[] args) {
     System.out.println("Max fruit count of 2 types is: "
-        + MaxFruitCountOf2Types005.findLength(new char[] {'A', 'B', 'C', 'A', 'D'}));
+        + MaxFruitCountOf2Types.findLength(new char[] {'A', 'B', 'C', 'A', 'D'}));
     System.out.println("Max fruit count of 2 types is: "
-        + MaxFruitCountOf2Types005.findLength(new char[] {'A', 'B', 'C', 'A', 'C'}));
+        + MaxFruitCountOf2Types.findLength(new char[] {'A', 'B', 'C', 'A', 'C'}));
     System.out.println("Max fruit count of 2 types is: "
-        + MaxFruitCountOf2Types005.findLength(new char[] {'A', 'B', 'C', 'B', 'B', 'C'}));
+        + MaxFruitCountOf2Types.findLength(new char[] {'A', 'B', 'C', 'B', 'B', 'C'}));
   }
 
   /**
