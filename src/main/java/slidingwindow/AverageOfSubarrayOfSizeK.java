@@ -2,13 +2,13 @@ package slidingwindow;
 
 import java.util.Arrays;
 
-public class AverageOfSubarrayOfSizeK001 {
+public class AverageOfSubarrayOfSizeK {
 
   public static void main(String[] args) {
-    System.out.println(Arrays.toString(AverageOfSubarrayOfSizeK001
+    System.out.println(Arrays.toString(AverageOfSubarrayOfSizeK
         .findAverages(5, new int[]{1, 3, 2, 6, -1, 4, 1, 8, 2})));
 
-    System.out.println(Arrays.toString(AverageOfSubarrayOfSizeK001
+    System.out.println(Arrays.toString(AverageOfSubarrayOfSizeK
         .findAveragesEfficiently(5, new int[]{1, 3, 2, 6, -1, 4, 1, 8, 2})));
   }
 
