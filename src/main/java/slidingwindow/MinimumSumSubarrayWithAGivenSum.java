@@ -1,10 +1,10 @@
 package slidingwindow;
 
-public class MinimumSumSubarrayWithAGivenSum003 {
+public class MinimumSumSubarrayWithAGivenSum {
 
   public static void main(String[] args) {
     System.out.println("Smallest subarray length: "
-        + MinimumSumSubarrayWithAGivenSum003.findMinSubArray(7, new int[] { 2, 1, 5, 2, 3, 2 }));
+        + MinimumSumSubarrayWithAGivenSum.findMinSubArray(7, new int[] { 2, 1, 5, 2, 3, 2 }));
   }
 
   /**
