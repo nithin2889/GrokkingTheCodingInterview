@@ -3,15 +3,15 @@ package slidingwindow;
 import java.util.HashMap;
 import java.util.Map;
 
-public class NoRepeatSubstring006 {
+public class NoRepeatSubstring {
 
   public static void main(String[] args) {
     System.out.println("Length of the longest substring: "
-        + NoRepeatSubstring006.findLength("aabccbb"));
+        + NoRepeatSubstring.findLength("aabccbb"));
     System.out.println("Length of the longest substring: "
-        + NoRepeatSubstring006.findLength("abbbb"));
+        + NoRepeatSubstring.findLength("abbbb"));
     System.out.println("Length of the longest substring: "
-        + NoRepeatSubstring006.findLength("abccde"));
+        + NoRepeatSubstring.findLength("abccde"));
   }
 
   /**
