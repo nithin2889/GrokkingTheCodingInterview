@@ -1,17 +1,17 @@
 package slidingwindow;
 
-public class MaximumSumSubarrayOfSizeK002 {
+public class MaximumSumSubarrayOfSizeK {
 
   public static void main(String[] args) {
     System.out.println("Maximum sum of a subarray of size K: "
-        + MaximumSumSubarrayOfSizeK002.findMaxSumSubArray(3, new int[] { 2, 1, 5, 1, 3, 2 }));
+        + MaximumSumSubarrayOfSizeK.findMaxSumSubArray(3, new int[] { 2, 1, 5, 1, 3, 2 }));
 
     System.out.println("Maximum sum of a subarray of size K efficiently: " +
-        MaximumSumSubarrayOfSizeK002
+        MaximumSumSubarrayOfSizeK
         .findMaxSumSubArrayEfficiently(3, new int[] { 2, 1, 5, 1, 3, 2 }));
 
     System.out.println("Maximum sum of a subarray of size K using while loop: " +
-        MaximumSumSubarrayOfSizeK002
+        MaximumSumSubarrayOfSizeK
             .findMaxSumSubArrayUsingWhile(3, new int[] { 2, 1, 5, 1, 3, 2 }));
   }
 
