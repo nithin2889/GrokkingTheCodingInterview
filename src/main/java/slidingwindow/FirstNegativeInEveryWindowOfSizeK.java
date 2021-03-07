@@ -16,7 +16,6 @@ public class FirstNegativeInEveryWindowOfSizeK {
     int size = arr.length;
     int windowStart = 0, windowEnd = size - 1;
     List<Integer> negativeList = new ArrayList<>();
-    List<Integer> resultList = new ArrayList<>();
 
     while (windowEnd < size) {
       if (arr[windowEnd] < 0) {
@@ -30,9 +29,9 @@ public class FirstNegativeInEveryWindowOfSizeK {
 
       if (windowEnd - windowStart + 1 == k) {
         if (!negativeList.isEmpty()) {
-          resultList.add(negativeList.get(0));
+          negativeList.add(negativeList.get(0));
         } else {
-          resultList.add(0);
+          negativeList.add(0);
         }
         if (arr[windowStart] < 0) {
           negativeList.remove(0);
