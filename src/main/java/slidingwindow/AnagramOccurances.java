@@ -3,11 +3,11 @@ package slidingwindow;
 import java.util.HashMap;
 import java.util.Map;
 
-public class AnagramOccurances007 {
+public class AnagramOccurances {
 
   public static void main(String[] args) {
     System.out.println("Number of anagrams in the string are: ");
-    int count = AnagramOccurances007.countOccurance("aabaabaa", "aa");
+    int count = AnagramOccurances.countOccurance("aabaabaa", "aa");
     System.out.println(count);
   }
 
