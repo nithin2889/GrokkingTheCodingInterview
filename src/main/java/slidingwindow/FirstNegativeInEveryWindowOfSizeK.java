@@ -9,37 +9,31 @@ public class FirstNegativeInEveryWindowOfSizeK {
     int[] arr = {12, -1, -7, 8, -15, 30, 16, 28};
     int k = 3;
 
-    System.out.println(findNegatives(arr, k));
+    System.out.println("First negatives in every window are: " + findNegatives(arr, k));
   }
 
   private static List<Integer> findNegatives(int[] arr, int k) {
     int size = arr.length;
-    int windowStart = 0, windowEnd = size - 1;
-    List<Integer> negativeList = new ArrayList<>();
+    int windowStart = 0, windowEnd = 0;
+
+    List<Integer> ans = new ArrayList<>();
 
     while (windowEnd < size) {
-      if (arr[windowEnd] < 0) {
-        negativeList.add(arr[windowEnd]);
-      }
-
       if (windowEnd - windowStart + 1 < k) {
         windowEnd++;
-        continue;
-      }
-
-      if (windowEnd - windowStart + 1 == k) {
-        if (!negativeList.isEmpty()) {
-          negativeList.add(negativeList.get(0));
-        } else {
-          negativeList.add(0);
+      } else if (windowEnd - windowStart + 1 == k) {
+        for (int s = windowStart; s <= windowEnd; s++) {
+          if (arr[s] < 0) {
+            ans.add(arr[s]);
+            break;
+          } else if (arr[s] > 0 && s == windowEnd) {
+            ans.add(0);
+          }
         }
-        if (arr[windowStart] < 0) {
-          negativeList.remove(0);
-        }
+        windowEnd++;
         windowStart++;
       }
-      windowEnd++;
     }
-    return negativeList;
+    return ans;
   }
 }
