@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class SearchTripletSumToZero004 {
+public class SearchTripletSumToZero {
 
   public static void main(String[] args) {
-    System.out.println(SearchTripletSumToZero004.searchTriplet(new int[] {-3, -1, 1, 2, -1, 1, -2}));
-    System.out.println(SearchTripletSumToZero004.searchTriplet(new int[] {-5, 2, -1, -2 , 3}));
+    System.out.println(SearchTripletSumToZero.searchTriplet(new int[] {-3, -1, 1, 2, -1, 1, -2}));
+    System.out.println(SearchTripletSumToZero.searchTriplet(new int[] {-5, 2, -1, -2 , 3}));
   }
 
   /**
