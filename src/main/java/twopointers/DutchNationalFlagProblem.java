@@ -1,6 +1,6 @@
 package twopointers;
 
-public class DutchNationalFlag008 {
+public class DutchNationalFlagProblem {
 
   /**
    * Given an array containing 0s, 1s and 2s, sort the array in-place. You should treat numbers of
@@ -79,7 +79,7 @@ public class DutchNationalFlag008 {
   public static void main(String[] args) {
     int[] arr = new int[]{1, 0, 2, 1, 0};
     System.out.println("Sorting using a for loop:");
-    DutchNationalFlag008.sort(arr);
+    DutchNationalFlagProblem.sort(arr);
     for (int num : arr) {
       System.out.print(num + " ");
     }
@@ -87,7 +87,7 @@ public class DutchNationalFlag008 {
 
     arr = new int[]{2, 0, 0, 1, 1, 2, 2};
     System.out.println("Sorting using a while loop:");
-    DutchNationalFlag008.sort(arr);
+    DutchNationalFlagProblem.sort(arr);
     for (int num : arr) {
       System.out.print(num + " ");
     }
