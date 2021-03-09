@@ -1,9 +1,9 @@
 package twopointers;
 
-public class SortedArraySquares003 {
+public class SortedArraySquares {
 
   public static void main(String[] args) {
-    int[] result = SortedArraySquares003.makeSquares(new int[] {-2, -1, 0, 2, 3});
+    int[] result = SortedArraySquares.makeSquares(new int[] {-2, -1, 0, 2, 3});
     for (int num : result) {
       System.out.print(num + " ");
     }
