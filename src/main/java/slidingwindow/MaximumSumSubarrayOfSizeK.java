@@ -71,21 +71,26 @@ public class MaximumSumSubarrayOfSizeK {
   }
 
   public static int findMaxSumSubArrayAnotherSolution(int k, int[] arr) {
+    // subarray size
     int l = 0, r = k - 1;
     int sum = 0;
 
+    // compute the first subarray sum and mark as maximum.
     for (int i = 0; i <= k - 1; i++) {
       sum += arr[i];
     }
     int max = sum;
 
     while (r < arr.length - 1) {
+      // first move to the next element and then add the value to the sum
       r = r + 1;
       sum += arr[r];
 
+      // first remove the element from the sum and then move.
       sum -= arr[l];
       l = l + 1;
 
+      // check if you get a new maximum
       if (sum > max) {
         max = sum;
       }
