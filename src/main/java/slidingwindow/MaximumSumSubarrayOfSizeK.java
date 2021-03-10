@@ -10,6 +10,10 @@ public class MaximumSumSubarrayOfSizeK {
         MaximumSumSubarrayOfSizeK
             .findMaxSumSubArrayEfficiently(3, new int[]{2, 1, 5, 1, 3, 2}));
 
+    System.out.println("Maximum sum of a subarray of size K another solution: " +
+        MaximumSumSubarrayOfSizeK
+            .findMaxSumSubArrayAnotherSolution(3, new int[]{2, 1, 5, 1, 3, 2}));
+
     System.out.println("Maximum sum of a subarray of size K using while loop: " +
         MaximumSumSubarrayOfSizeK
             .findMaxSumSubArrayUsingWhile(3, new int[]{2, 1, 5, 1, 3, 2}));
@@ -70,7 +74,7 @@ public class MaximumSumSubarrayOfSizeK {
     int l = 0, r = k - 1;
     int sum = 0;
 
-    for (int i = 0; i < k - 1; i++) {
+    for (int i = 0; i <= k - 1; i++) {
       sum += arr[i];
     }
     int max = sum;
