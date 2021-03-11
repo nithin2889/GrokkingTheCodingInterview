@@ -1,6 +1,6 @@
 package fastslowpointers;
 
-public class MiddleOfLinkedList005 {
+public class MiddleOfLinkedList {
 
   /**
    * Given the head of a Singly LinkedList, write a method to return the middle node of the
@@ -48,12 +48,12 @@ public class MiddleOfLinkedList005 {
     head.next.next = new ListNode(3);
     head.next.next.next = new ListNode(4);
     head.next.next.next.next = new ListNode(5);
-    System.out.println("Middle node: " + MiddleOfLinkedList005.findMiddle(head).value);
+    System.out.println("Middle node: " + MiddleOfLinkedList.findMiddle(head).value);
 
     head.next.next.next.next.next = new ListNode(6);
-    System.out.println("Middle node: " + MiddleOfLinkedList005.findMiddle(head).value);
+    System.out.println("Middle node: " + MiddleOfLinkedList.findMiddle(head).value);
 
     head.next.next.next.next.next.next = new ListNode(7);
-    System.out.println("Middle node: " + MiddleOfLinkedList005.findMiddle(head).value);
+    System.out.println("Middle node: " + MiddleOfLinkedList.findMiddle(head).value);
   }
 }
