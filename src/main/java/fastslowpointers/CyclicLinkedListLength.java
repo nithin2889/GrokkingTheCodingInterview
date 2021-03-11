@@ -1,6 +1,6 @@
 package fastslowpointers;
 
-public class CyclicLinkedListLength002 {
+public class CyclicLinkedListLength {
 
   /**
    * Given the head of a LinkedList with a cycle, find the length of the cycle.
@@ -49,10 +49,10 @@ public class CyclicLinkedListLength002 {
     head.next.next.next.next.next.next = head.next.next;
 
     System.out
-        .println("Linked List cycle length: " + CyclicLinkedListLength002.findCycleLength(head));
+        .println("Linked List cycle length: " + CyclicLinkedListLength.findCycleLength(head));
 
     head.next.next.next.next.next.next = head.next.next.next;
     System.out
-        .println("Linked List cycle length: " + CyclicLinkedListLength002.findCycleLength(head));
+        .println("Linked List cycle length: " + CyclicLinkedListLength.findCycleLength(head));
   }
 }
