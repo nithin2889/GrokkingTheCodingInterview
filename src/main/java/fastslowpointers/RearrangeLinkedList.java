@@ -1,6 +1,6 @@
 package fastslowpointers;
 
-public class RearrangeLinkedList007 {
+public class RearrangeLinkedList {
 
   public static void reorder(ListNode head) {
     if(head == null || head.next == null)
