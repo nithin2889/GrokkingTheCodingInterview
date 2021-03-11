@@ -1,6 +1,6 @@
 package fastslowpointers;
 
-public class LinkedListCycleStart003 {
+public class LinkedListCycleStart {
 
   /**
    * Given the head of a Singly LinkedList that contains a cycle, write a function to find the
@@ -80,17 +80,17 @@ public class LinkedListCycleStart003 {
     head.next.next.next.next.next.next = head.next.next;
 
     System.out
-        .println("Linked List cycle start: " + LinkedListCycleStart003
+        .println("Linked List cycle start: " + LinkedListCycleStart
             .findCycleStart(head).value);
 
     head.next.next.next.next.next.next = head.next.next.next;
     System.out
-        .println("Linked List cycle start: " + LinkedListCycleStart003
+        .println("Linked List cycle start: " + LinkedListCycleStart
             .findCycleStart(head).value);
 
     head.next.next.next.next.next.next = head;
     System.out
-        .println("Linked List cycle start: " + LinkedListCycleStart003
+        .println("Linked List cycle start: " + LinkedListCycleStart
             .findCycleStart(head).value);
   }
 }
