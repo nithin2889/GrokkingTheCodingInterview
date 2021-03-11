@@ -1,6 +1,6 @@
 package fastslowpointers;
 
-public class PalindromeLinkedList006 {
+public class PalindromeLinkedList {
 
   /**
    * Given the head of a Singly LinkedList, write a method to check if the LinkedList is a
@@ -90,9 +90,9 @@ public class PalindromeLinkedList006 {
     head.next.next = new ListNode(6);
     head.next.next.next = new ListNode(4);
     head.next.next.next.next = new ListNode(2);
-    System.out.println("Linked List has cycle: " + PalindromeLinkedList006.isPalindrome(head));
+    System.out.println("Linked List has cycle: " + PalindromeLinkedList.isPalindrome(head));
 
     head.next.next.next.next.next = new ListNode(2);
-    System.out.println("Linked List has cycle: " + PalindromeLinkedList006.isPalindrome(head));
+    System.out.println("Linked List has cycle: " + PalindromeLinkedList.isPalindrome(head));
   }
 }
