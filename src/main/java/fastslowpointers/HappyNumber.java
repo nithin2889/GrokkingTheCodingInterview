@@ -1,6 +1,6 @@
 package fastslowpointers;
 
-public class HappyNumber004 {
+public class HappyNumber {
 
   /**
    * Any number will be called a happy number if, after repeatedly replacing it with a number equal
@@ -80,7 +80,7 @@ public class HappyNumber004 {
   }
 
   public static void main(String[] args) {
-    System.out.println("23 is a happy number? " + HappyNumber004.find(23));
-    System.out.println("12 is a happy number? " + HappyNumber004.find(12));
+    System.out.println("23 is a happy number? " + HappyNumber.find(23));
+    System.out.println("12 is a happy number? " + HappyNumber.find(12));
   }
 }
