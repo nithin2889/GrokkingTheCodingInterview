@@ -41,7 +41,7 @@ package fastslowpointers;
  * <p>
  * Space Complexity: The algorithm runs in constant space O(1).
  */
-public class LinkedListDetectCycle001 {
+public class LinkedListDetectCycle {
 
   public static boolean hasCycle(ListNode head) {
     ListNode fast = head;
@@ -65,12 +65,12 @@ public class LinkedListDetectCycle001 {
     head.next.next.next = new ListNode(4);
     head.next.next.next.next = new ListNode(5);
     head.next.next.next.next.next = new ListNode(6);
-    System.out.println("Linked List has cycle: " + LinkedListDetectCycle001.hasCycle(head));
+    System.out.println("Linked List has cycle: " + LinkedListDetectCycle.hasCycle(head));
 
     head.next.next.next.next.next.next = head.next.next;
-    System.out.println("Linked List has cycle: " + LinkedListDetectCycle001.hasCycle(head));
+    System.out.println("Linked List has cycle: " + LinkedListDetectCycle.hasCycle(head));
 
     head.next.next.next.next.next.next = head.next.next.next;
-    System.out.println("Linked List has cycle: " + LinkedListDetectCycle001.hasCycle(head));
+    System.out.println("Linked List has cycle: " + LinkedListDetectCycle.hasCycle(head));
   }
 }
