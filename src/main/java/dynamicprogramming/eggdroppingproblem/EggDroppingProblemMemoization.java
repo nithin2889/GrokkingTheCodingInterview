@@ -1,4 +1,4 @@
-package dynamicprogramming.edddroppingproblem;
+package dynamicprogramming.eggdroppingproblem;
 
 public class EggDroppingProblemMemoization {
 
