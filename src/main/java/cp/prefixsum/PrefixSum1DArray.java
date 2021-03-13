@@ -25,6 +25,7 @@ public class PrefixSum1DArray {
     int sum;
     int[] prefixSum = new int[arr.length];
 
+    // Predetermining the prefix sum array
     for (int i = 0; i < arr.length; i++) {
       if (i == 0) {
         prefixSum[i] = arr[i];
