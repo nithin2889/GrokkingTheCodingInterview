@@ -10,6 +10,7 @@ public class PowerGeneration {
   private static long power(long base, long power) {
     long ans = 1;
     while (power > 0) {
+      // for even powers
       if (power % 2 == 0) {
         base = base * base;
         power = power / 2;
