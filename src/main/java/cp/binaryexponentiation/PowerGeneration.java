@@ -3,7 +3,7 @@ package cp.binaryexponentiation;
 public class PowerGeneration {
 
   public static void main(String[] args) {
-    long base = 16, power = 10;
+    long base = 10, power = 10;
     System.out.println("Power(" + base + '^' + power + ") is: " + power(base, power));
   }
 
