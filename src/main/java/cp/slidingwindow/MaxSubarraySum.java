@@ -54,6 +54,7 @@ public class MaxSubarraySum {
     for (int i = 0; i < k; i++) {
       sum += arr[i];
     }
+
     int l = 0, r = k - 1;
     while (r < n - 1) {
       r = r + 1;
