@@ -57,9 +57,11 @@ public class MaxSubarraySum {
 
     int l = 0, r = k - 1;
     while (r < n - 1) {
+      // first move and then remove
       r = r + 1;
       sum += arr[r];
 
+      // first remove and then move
       sum -= arr[l];
       l = l + 1;
 
