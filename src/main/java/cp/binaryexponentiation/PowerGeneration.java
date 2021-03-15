@@ -15,6 +15,7 @@ public class PowerGeneration {
         base = base * base;
         power = power / 2;
       } else {
+        // for odd powers
         ans = ans * base;
         power = power - 1;
       }
